@@ -5,20 +5,20 @@
 class Agmon < Formula
   desc "Real-time observability for AI coding agents"
   homepage "https://github.com/tt-a1i/agmon"
-  version "0.3.5"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tt-a1i/agmon/releases/download/v0.3.5/agmon_darwin_amd64.tar.gz"
-      sha256 "9c28ffa276e39fdf5c05ade5e004a9101afcd7081791fea964d578530d9b5bfe"
+      url "https://github.com/tt-a1i/agmon/releases/download/v0.4.0/agmon_darwin_amd64.tar.gz"
+      sha256 "998086c899205d722f0918f2b8039313698e7d4ffa25304eb7d5ac1c356aba40"
 
       define_method(:install) do
         bin.install "agmon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tt-a1i/agmon/releases/download/v0.3.5/agmon_darwin_arm64.tar.gz"
-      sha256 "15f9d891a3ae6abb9667298c44b0245fb1a78f9224d62a2a2482f3b58a2cfa04"
+      url "https://github.com/tt-a1i/agmon/releases/download/v0.4.0/agmon_darwin_arm64.tar.gz"
+      sha256 "0934576f8a13f8980f04924f0115ec48f0063525cc758ba9c901acf8b6a9874e"
 
       define_method(:install) do
         bin.install "agmon"
@@ -28,15 +28,15 @@ class Agmon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tt-a1i/agmon/releases/download/v0.3.5/agmon_linux_amd64.tar.gz"
-      sha256 "b532402e3bb8b01eeb7b672b40d4be7bec2b314854c504752236f88a24ef048c"
+      url "https://github.com/tt-a1i/agmon/releases/download/v0.4.0/agmon_linux_amd64.tar.gz"
+      sha256 "1d64a86dfdcd8d69a3c45f3b497d0270f2b0a1397e433b4dd6c96c166d95d902"
       define_method(:install) do
         bin.install "agmon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tt-a1i/agmon/releases/download/v0.3.5/agmon_linux_arm64.tar.gz"
-      sha256 "fb3934b27ec646c32d24e6878890688b43ffc1f3cddb9a6adfcbff4bc7905a31"
+      url "https://github.com/tt-a1i/agmon/releases/download/v0.4.0/agmon_linux_arm64.tar.gz"
+      sha256 "11ef101ba8baf652be4a4364ba14cd5cd388a7160cedeb20985505ace8b9e6b8"
       define_method(:install) do
         bin.install "agmon"
       end
