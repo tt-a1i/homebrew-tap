@@ -5,20 +5,20 @@
 class Doppel < Formula
   desc "Clone a macOS .app bundle into a second, separately-launchable instance"
   homepage "https://github.com/tt-a1i/doppel"
-  version "0.2.1-runtime-test"
+  version "0.2.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/tt-a1i/doppel/releases/download/v0.2.1-runtime-test/doppel_0.2.1-runtime-test_darwin_amd64.tar.gz"
-    sha256 "435730fdeb9e92aa48ca3a5359b250e08016de68030322bcce5990c56e33201f"
+    url "https://github.com/tt-a1i/doppel/releases/download/v0.2.0/doppel_0.2.0_darwin_amd64.tar.gz"
+    sha256 "d35c2bc04260b3d95625858f88546dd88f5c2e8b76b4513ccba3c3389d03aac3"
 
     define_method(:install) do
       bin.install "doppel"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/tt-a1i/doppel/releases/download/v0.2.1-runtime-test/doppel_0.2.1-runtime-test_darwin_arm64.tar.gz"
-    sha256 "cdf993a94bfb28e89df748b504aa47f3c2bdce99a2bb88521075248076b29018"
+    url "https://github.com/tt-a1i/doppel/releases/download/v0.2.0/doppel_0.2.0_darwin_arm64.tar.gz"
+    sha256 "96d067c67add4419fb2fe3c6e0492cd7cbc08b16853b9fabe6e083cd54712175"
 
     define_method(:install) do
       bin.install "doppel"
